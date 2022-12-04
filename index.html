@@ -5,17 +5,23 @@
     <title>前端知识储备</title>
   </head>
   <style>
-    .box {
+    @media screen and (min-width: 800px) {
+      .box {
+      background-color: rgb(250, 250, 250);
       position: fixed;
       top: 15%;
       height: 650px;
       width: 100%;
-      border: 1px solid red;
+      min-width: 913px;
+      /* border: 1px solid red; */
       overflow: auto; /* 溢出需要可滚动 */
       scrollbar-width: none; /* Firefox隐藏滚动条 */
       -ms-overflow-style: none; /* Internet Explorer 10+隐藏滚动条 */
+      opacity: 0.8;
     }
     body {
+      z-index: -1;
+      min-width: 950px;
       margin: 0;
       padding: 0;
       /* min-width: 1100px; */
@@ -28,13 +34,7 @@
       height: 0; /* Safari,Chrome 隐藏滚动条 */
       display: none; /* 移动端、pad 上Safari，Chrome，隐藏滚动条 */
     }
-    .top {
-      position: fixed;
-      top: 5%;
-      left: 47%;
-      height: 10%;
-      width: 300px;
-    }
+
     .Basics {
       display: flex;
       justify-content: space-between;
@@ -71,7 +71,6 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-
     }
     .Uicomponentlibrary > div:hover {
       color: rgb(217, 0, 255);
@@ -86,9 +85,111 @@
       border-radius: 5px;
       margin-bottom: 10px;
     }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: rgb(217, 0, 255);
+    }
+    .top {
+      display: flex;
+      margin: 3%;
+      margin-top: 1.5%;
+      position: fixed;
+      width: 100%;
+      min-width: 913px;
+      background-color: rgb(255, 255, 255);
+     
+    }
+    .text {
+      position: absolute;
+      min-width: 300px;
+      left: 45%;
+    }
+    #time {
+      position: absolute;
+      right: 0;
+      min-width: 300px;
+      margin-top: 3%;
+    }
+    .select{
+   margin-left: 20%;
+   margin-top: 5%;
+    }
+    .backglound{
+      margin-top: 1.3%;
+    }
+    }
+    @media screen and (max-width: 500px) {
+    body{
+     background-color: black;
+    }
+    }
   </style>
   <body>
-    <h3 class="top">Wait and hope!</h3>
+    <!-- <script src="./bakcgroud/Cherry_blossms.js"></script> -->
+    <div class="top">
+      <div class="backglound" >
+      <div class="Change_Background" title="更换背景">
+        Change Background：
+      </div>
+    
+      <div class="select">
+        <select name="Background_effect">
+          <option value="Cherryblossoms">Cherry blossoms</option>
+          <option value="snowflake">snowflake</option>
+        </select>
+      </div>  </div>
+     
+      <h3 class="text">Wait And Hope</h3>
+      <!-- 时间 -->
+      <div
+        id="time"
+        title="盛年不重来，一日难再晨；
+    及时当勉励，岁月不待人。"
+      ></div>
+    </div>
+    <script type="text/javascript">
+      function time() {
+        var vWeek, vWeek_s, vDay;
+        vWeek = [
+          "星期日",
+          "星期一",
+          "星期二",
+          "星期三",
+          "星期四",
+          "星期五",
+          "星期六",
+        ];
+        var date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+        vWeek_s = date.getDay();
+        document.getElementById("time").innerHTML =
+          year +
+          "年" +
+          month +
+          "月" +
+          day +
+          "日" +
+          "\t" +
+          hours +
+          ":" +
+          minutes +
+          ":" +
+          seconds +
+          "\t" +
+          vWeek[vWeek_s];
+      }
+      setInterval("time()", 1000);
+    </script>
+
+    <!-- 内容盒子 -->
     <div class="box">
       <div class="three">
         <div class="name">Front three piece set：</div>
@@ -107,29 +208,54 @@
       </div>
       <div class="frame">
         <div class="name">Library：</div>
+        <!-- ui组件库 -->
         <h5>Ui component library：</h5>
         <div class="Uicomponentlibrary">
           <div>Element</div>
           <div>View</div>
           <div>Vant</div>
         </div>
+        <!-- 技能库 -->
         <h5>Skills bank：</h5>
         <div class="Uicomponentlibrary">
           <div>JQuery</div>
           <div>ECharts</div>
-          <div>Vant</div>
+          <div>Yarn</div>
         </div>
+        <!-- 特效库 -->
         <h5>Special effects library：</h5>
         <div class="Uicomponentlibrary">
-          <div>Webgradients</div>
-          <div>ECharts</div>
-          <div>Vant</div>
-        </div>  <h5>Tool library：</h5>
-        <div class="Uicomponentlibrary">
-          <div>Webgradients</div>
-          <div>ECharts</div>
-          <div>Vant</div>
+          <div title="背景颜色挑选">
+            <a href="https://webgradients.com/"> Webgradients</a>
+          </div>
         </div>
+        <!-- 工具库 -->
+        <h5>Tool library：</h5>
+        <div class="Uicomponentlibrary">
+          <div title="草料二维码生成"><a href="https://cli.im/"> Cli</a></div>
+          <div title="向页面输出代码">
+            <a href="https://highlightjs.org/">Highlightjs</a>
+          </div>
+          <div title="熊猫压缩">
+            <a href="https://tinypng.com/"> Tinypng</a>
+          </div>
+          <div title="时间差计算">
+            <a href="https://www.beijing-time.org/riqi.htm"> Beijing-time</a>
+          </div>
+          <div title="进制在线转换">
+            <a href="https://tool.oschina.net/hexconvert/">Hexconvert</a>
+          </div>
+          <div title="图像转换">
+            <a href="https://www.aconvert.com/cn/icon/png-to-ico/">
+              Png-to-ico</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- 方法 -->
+      <div class="frame">
+        <div class="name">Method:</div>
+        <div class="Basics"></div>
       </div>
     </div>
   </body>
