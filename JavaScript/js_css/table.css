@@ -1,0 +1,14 @@
+table {
+    margin: auto;
+    margin-top: 10%;
+}
+
+th {
+    min-width: 50px;
+}
+.left{
+    text-align: left;
+}
+h3{
+    color: crimson;
+}

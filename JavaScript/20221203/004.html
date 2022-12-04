@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../highlight/styles/monokai-sublime.min.css" />
+    <link rel="stylesheet" href="../../JavaScript/js_css/code.css">
+    <script src="../../highlight/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="text">
+            <h3 style="text-align: center"> js的三种编写位置</h3>
+            <ol>
+                <li>行内式js，直接写到元素内部</li>
+                <li>内嵌式 用script 标签 </li>
+                <li>引入式</li>
+             
+            </ol>
+        </div>
+        <div class="code">
+            <pre><code class="javascript" >
+ //行内式
+&lt;input type="button" value="唐伯虎" onclick="alert('秋香姐')"&gt;
+//内嵌式
+&lt;script&gt;alert('沙漠骆驼')&lt;/script&gt;
+//引入式
+&lt;script src='../js_css/code.css'&gt;&lt;/script&gt;
+      </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>

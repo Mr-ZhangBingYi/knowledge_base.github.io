@@ -1,0 +1,34 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  background-color: rgb(255, 255, 255);
+  overflow: auto; /* 溢出需要可滚动 */
+  scrollbar-width: none; /* Firefox隐藏滚动条 */
+  -ms-overflow-style: none; /* Internet Explorer 10+隐藏滚动条 */
+}
+::-webkit-scrollbar {
+  width: 0; /* Safari,Chrome 隐藏滚动条 */
+  height: 0; /* Safari,Chrome 隐藏滚动条 */
+  display: none; /* 移动端、pad 上Safari，Chrome，隐藏滚动条 */
+}
+.code {
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 200px;
+}
+.text {
+  position: fixed;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  margin-left: 12.5%;
+  width: 75%;
+  background-color: aliceblue;
+}
+.box {
+  margin-top: 30px;
+  height: 750px;
+  overflow: auto; /* 溢出需要可滚动 */
+  scrollbar-width: none; /* Firefox隐藏滚动条 */
+  -ms-overflow-style: none; /* Internet Explorer 10+隐藏滚动条 */
+}
