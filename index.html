@@ -1,145 +1,141 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>前端知识储备</title>
-  </head>
- <link rel="stylesheet" href="./index.css">
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index_css/min.css">
+  <link rel="stylesheet" href="./index_css/max.css">
+  <link rel="stylesheet" href="./index_css/index.css">
+  <title>Wait And Hope！</title>
+</head>
+<body>
+  <div class="box">
     <div class="top">
-      <div class="backglound">
-        <div class="Change_Background" title="更换背景">
-          Change Background：
-        </div>
-
-        <div class="select">
-          <select name="Background_effect">
-            <option value="Cherryblossoms">Cherry blossoms</option>
-            <option value="snowflake">snowflake</option>
-          </select>
-        </div>
-      </div>
-
-      <h3 class="text">Wait And Hope</h3>
-      <!-- 时间 -->
-      <div
-        id="time"
-        title="盛年不重来，一日难再晨；
-    及时当勉励，岁月不待人。"
-      ></div>
+      <h3>Welcome Mr. zhang's front-end knowledge base ！</h3>
     </div>
-    <script type="text/javascript">
-      function time() {
-        var vWeek, vWeek_s, vDay;
-        vWeek = [
-          "星期日",
-          "星期一",
-          "星期二",
-          "星期三",
-          "星期四",
-          "星期五",
-          "星期六",
-        ];
-        var date = new Date();
-        year = date.getFullYear();
-        month = date.getMonth() + 1;
-        day = date.getDate();
-        hours = date.getHours();
-        minutes = date.getMinutes();
-        seconds = date.getSeconds();
-        vWeek_s = date.getDay();
-        document.getElementById("time").innerHTML =
-          year +
-          "年" +
-          month +
-          "月" +
-          day +
-          "日" +
-          "\t" +
-          hours +
-          ":" +
-          minutes +
-          ":" +
-          seconds +
-          "\t" +
-          vWeek[vWeek_s];
-      }
-      setInterval("time()", 1000);
-    </script>
+    <div class="content">
+      <div class="list">
+        <h5>Software:</h5>
+        <div class="library">
+          <div class="max"> <a href="https://code.visualstudio.com/Download">Vscode</a> </div>
+          <div class="max"> <a href="https://www.dcloud.io/hbuilderx.html">HBuilder</a> </div>
+          <div class="max"> <a href="https://nodejs.org/en/">Node</a> </div>
+          <div class="max"> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/">微信开发者工具</a> </div>
+          <div class="max"> <a href="https://www.google.cn/intl/zh-CN/chrome/">Google</a> </div>
+          <div class="max"> <a href="https://git-scm.com/">Git</a> </div>
+          <div class="max"> <a href="https://github.com/">GitHub</a> </div>
+          <div class="max"> <a href="https://svnbucket.com/">SVN</a> </div>
+        </div>
 
-    <!-- 内容盒子 -->
-    <div class="box">
-      <div class="three">
-        <div class="name">Front three piece set：</div>
-        <div class="Basics">
-          <div>HTML</div>
-          <div>CSS</div>
-          <div> <a href="./JavaScript/index.html">JavaScript</a>  </div>
-        </div>
       </div>
-      <div class="frame">
-        <div class="name">Frame:</div>
-        <div class="Basics">
-          <div>Vue</div>
-          <div>React</div>
+      <div class="list">
+        <h5>Three piece set ：</h5>
+        <div class="library">
+          <div class="max">HTML5</div>
+          <div class="max">CSS3</div>
+          <div class="max"> <a href="./JavaScript/index.html">JavaScript</a> </div>
         </div>
+
       </div>
-      <div class="frame">
-        <div class="name">Library：</div>
-        <!-- ui组件库 -->
-        <h5>Ui component library：</h5>
-        <div class="Uicomponentlibrary">
-          <div>Element</div>
-          <div>View</div>
-          <div>Vant</div>
+      <div class="list">
+        <h5>Frame :</h5>
+        <div class="library">
+          <div class="max"> Vue</div>
+          <div class="max">Uniapp</div>
+          <div class="max">React</div>
+          <div class="max">小程序</div>
+          <div class="max">Taro</div>
+          <div class="max">Bootstrap</div>
+          <div class="max">Next</div>
+          <div class="max">Nuxt</div>
+          <div class="max">Gatsby</div>
+          <div class="max">Express</div>
+          <div class="max">Blitz</div>
+          <div class="max">TypeORM</div>
+          <div class="max">Flutter</div>
         </div>
-        <!-- 技能库 -->
-        <h5>Skills bank：</h5>
-        <div class="Uicomponentlibrary">
-          <div>JQuery</div>
-          <div>ECharts</div>
-          <div>Yarn</div>
-        </div>
-        <!-- 特效库 -->
-        <h5>Special effects library：</h5>
-        <div class="Uicomponentlibrary">
-          <div title="背景颜色挑选">
-            <a href="https://webgradients.com/"> Webgradients</a>
-          </div>
-        </div>
-        <!-- 工具库 -->
-        <h5>Tool library：</h5>
-        <div class="Uicomponentlibrary">
-          <div title="草料二维码生成"><a href="https://cli.im/"> Cli</a></div>
-          <div title="向页面输出代码">
-            <a href="https://highlightjs.org/">Highlightjs</a>
-          </div>
-          <div title="熊猫压缩">
-            <a href="https://tinypng.com/"> Tinypng</a>
-          </div>
-          <div title="时间差计算">
-            <a href="https://www.beijing-time.org/riqi.htm"> Beijing-time</a>
-          </div>
-          <div title="进制在线转换">
-            <a href="https://tool.oschina.net/hexconvert/">Hexconvert</a>
-          </div>
-          <div title="图像转换">
-            <a href="https://www.aconvert.com/cn/icon/png-to-ico/">
-              Png-to-ico</a
-            >
-          </div>
-        </div>
+
       </div>
-      <!-- 方法 -->
-      <div class="frame">
-        <div class="name">Method:</div>
-        <div class="Basics"></div>
-      </div>
-      <!-- 面试题 -->
-      <div class="frame">
-        <div class="name">Interview questions:</div>
-        <div class="Basics"></div>
-      </div>
+      <div class="list  Library">
+        <h5>Library：</h5>
+        <div class="one">
+          <h6>JavaScript</h6>
+          <div class="laber">
+            <div class="min">JQuery</div>
+            <div class="min">TypeScript</div>
+            <div class="min">Underscore</div>
+            <div class="min">Solid</div>
+          <div class="min">Zepto</div>
+          <div class="min">Chart</div>
+          <div class="min">Moment</div>
+          <div class="min">Lodash</div>
+          <div class="min">Three</div>
+          <div class="min">Highlight</div>
+          <div class="min">Axios</div>
+          <div class="min">Nginx</div>
+          </div>
+        </div> 
+        <div class="one">
+          <h6>UI</h6>
+          <div class="laber">
+            <div class="min">Uview</div>
+            <div class="min">Vant</div>
+            <div class="min">Element</div>
+          </div>
+        </div> <div class="one">
+          <h6>CSS</h6>
+          <div class="laber">
+            <div class="min">party</div>
+            <div class="min">webgradients</div>
+            <div class="min">Buttons</div>
+            <div class="min">Sass</div>
+            <div class="min">Less</div>
+            <div class="min">Stylus</div>
+          </div>
+        </div><div class="one">
+          <h6>  Package Management</h6>
+          <div class="laber">
+            <div class="min">Webpack</div>
+            <div class="min">NPM</div>
+            <div class="min">Yarn</div>
+            <div class="min">Pnpm</div>
+            <div class="min">Lerna</div>
+          </div>
+        </div><div class="one">
+          <h6>Tool</h6>
+          <div class="laber">
+            <div class="min"> <a href="https://www.code-nav.cn/">CodeNav</a> </div>
+            <div class="min"> <a href="https://cli.im/">CaoLiao</a> </div>
+            <div class="min"> <a href="https://tinypng.com/">Tinypng</a> </div>
+            <div class="min"><a href="https://www.beijing-time.org/riqi.htm"> Beijing-time</a></div>
+            <div class="min"> <a href="https://www.aconvert.com/cn/icon/png-to-ico/"> PNG-ICO</a></div>
+          </div>
+        </div>
+    <div>
     </div>
-  </body>
+      </div>
+      <div class="list">
+        <h5> Static deployment</h5>
+        <div class="library">
+          <div class="max"> <a href="https://www.docusaurus.cn/">Docusaurus</a> </div>
+          <div class="max">  <a href="">Vuepress</a> </div>
+          <div class="max"> <a href="https://vercel.com/">Vercel</a> </div>
+        </div>
+
+      </div>
+      <div class="list">
+        <h5>Interview questions</h5>
+        <div class="library">
+          <div class="max">Primary</div>
+          <div class="max">Intermediate</div>
+          <div class="max">Senior</div>
+        </div>
+
+      </div> 
+     
+    </div>
+</body>
+
 </html>

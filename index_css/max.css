@@ -1,0 +1,56 @@
+@media screen and (max-width:700px) {
+
+  h5{
+    font-size: 16px;
+  
+  }
+
+  
+    h3 {
+      text-align: center;
+      color: rgb(209, 0, 0);
+      background-color: rgb(255, 255, 255);
+      padding: 20px 0;
+      margin: 0 0 5px 0;
+    }
+  
+   
+  
+    .content {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 87%;
+      overflow: auto;
+      /* 溢出需要可滚动 */
+      scrollbar-width: none;
+      /* Firefox隐藏滚动条 */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+隐藏滚动条 */
+    }
+  
+    ::-webkit-scrollbar {
+      width: 0;
+      /* Safari,Chrome 隐藏滚动条 */
+      height: 0;
+      /* Safari,Chrome 隐藏滚动条 */
+      display: none;
+      /* 移动端、pad 上Safari，Chrome，隐藏滚动条 */
+    }
+  
+
+  
+    .max {
+      border: 2px solid rgb(154, 154, 250);
+      padding: 10px;
+      margin: 7px;
+      border-radius: 5px;
+      min-width: 80px;
+      text-align: center;
+    }
+  .max:hover{
+    border: 2px solid rgb(0, 208, 255);
+  }
+    .list {
+      margin: 20px 10px;
+    }
+   }
