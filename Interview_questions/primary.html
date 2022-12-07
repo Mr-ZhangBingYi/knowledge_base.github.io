@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .subject {
+      background-color: rgb(168, 254, 139);
+      height: 30px;
+      line-height: 30px;
+    }
+    .answer {
+      background-color: rgb(232, 250, 215);
+      padding: 10px;
+    }
+    .box {
+      padding: 30px;
+      background-color: antiquewhite;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="tar">
+        <div class="subject">1.Vue生命周期：</div>
+        <div class="answer">
+          Vue
+          所有的功能的实现都是围绕其生命周期进行的，在生命周期的不同阶段调用对应的钩子函数可以实现组件数据管理和DOM渲染两大重要功能。
+          <br />
+          当Vue对象创建之前触发的函数（beforeCreate） <br />
+
+          Vue对象创建完成触发的函数(Created) <br />
+
+          当Vue对象开始挂载数据的时候触发的函数(beforeMount) <br />
+
+          当Vue对象挂载数据的完成的时候触发的函数(Mounted) <br />
+
+          Vue对象中的data数据发生改变之前触发的函数 (beforeUpdate) <br />
+
+          Vue对象中的data数据发生改变完成触发的函数(Updated) <br />
+
+          Vue对象销毁之前触发的函数 (beforeDestroy) <br />
+
+          Vue对象销毁完成触发的函数(Destroy) <br />
+        </div>
+      </div>
+      <div class="tar">
+        <div class="subject">2.Vue组件间传值的几种方式：</div>
+        <div class="answer">
+          Vue
+          所有的功能的实现都是围绕其生命周期进行的，在生命周期的不同阶段调用对应的钩子函数可以实现组件数据管理和DOM渲染两大重要功能。
+          <br />
+          父传子的实现方式就是通过props属性，子组件通过props属性接收从父组件传过来的值，而父组件传值的时候使用
+          v-bind 将子组件中预留的变量名绑定为data里面的数据即可 <br />
+
+          子传父的实现方式就是用了 this.$emit 来遍历 getData
+          事件，首先用按钮来触发 setData 事件，在 setData 中 用 this.$emit
+          来遍历 getData 事件，最后返回 this.msg <br />
+
+          vue
+          中没有直接子对子传参的方法，建议将需要传递数据的子组件，都合并为一个组件
+          如果一定需要子对子传参，可以先从传到父组件，再传到子组件（相当于一个公共bus文件）
+          为了便于开发，vue 推出了一个状态管理工具
+          vuex，可以很方便实现组件之间的参数传递<br />
+        </div>
+      </div>      <div class="tar">
+        <div class="subject">3.跨域：</div>
+        <div class="answer">
+            出于浏览器的同源策略限制。同源策略（Sameoriginpolicy）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说Web是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。同源策略会阻止一个域的javascript脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（protocol），主机（host）和端口号（port）
+          <br />
+          【1】设置document.domain解决无法读取非同源网页的 Cookie问题
+
+          因为浏览器是通过document.domain属性来检查两个页面是否同源，因此只要通过设置相同的document.domain，两个页面就可以共享Cookie（此方案仅限主域相同，子域不同的跨域应用场景。）
+           <br />
+
+           【2】跨文档通信 API：window.postMessage()
+
+           调用postMessage方法实现父窗口http://test1.com向子窗口http://test2.com发消息（子窗口同样可以通过该方法发送消息给父窗口）
+           
+           它可用于解决以下方面的问题：
+           
+           页面和其打开的新窗口的数据传递
+           多窗口之间消息传递
+           页面与嵌套的iframe消息传递
+           上面三个场景的跨域数据传递
+         <br />
+
+     
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
