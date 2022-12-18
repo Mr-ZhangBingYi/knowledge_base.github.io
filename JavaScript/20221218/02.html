@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../../highlight/styles/monokai-sublime.min.css"
+    />
+    <link rel="stylesheet" href="../../JavaScript/js_css/code.css" />
+    <script src="../../highlight/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="text">
+        <h3 style="text-align: center"></h3>
+        <ol>
+          <li>什么是变量：变量就是存储数据的盒子！</li>
+          <li>变量是程序在内存中申请的一块用来存放数据的空间</li>
+          <li>
+            var
+            是js的关键字。是variable的缩写，使用该关键字声明之后，计算机会自动分配内存空间
+          </li>
+          <li>命名规范：(1)区分大小写 (2)避免关键字(3)name也是保留字(4)不能以数字开头</li>
+          <li><a href="./code/02.html">看代码</a></li>
+        </ol>
+      </div>
+      <div class="code">
+        <pre><code class="javascript" >
+     //声明变量
+     var age;
+     //赋值,等号是存到的意思
+     age=10;
+     //var 声明的变量值可被修改，以最后一次为准；
+     //声明多个变量中间用英文逗号分卡，最后一个用分号；
+     var age=18,
+        name='张',
+        age=24;
+    //只声明不赋值，打印出来是undefined
+    var a;
+    console.log(a);
+    //a= undefined
+    //不声明，不赋值，直接使用会报错
+     console.log(s);
+    //不赋值直接使用,会变成全局变量；
+    qq=110;
+     console.log(qq)
+        
+      </code></pre>
+      </div>
+    </div>
+  </body>
+</html>
